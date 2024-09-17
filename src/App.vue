@@ -19,12 +19,7 @@ export default {
     <div class="content">
       <header>
         <h1>Azienda Agricola</h1>
-        <nav>
-          <router-link to="/moliture">Moliture</router-link>
-          <router-link to="/spese-breve-termine">Spese Breve Termine</router-link>
-          <router-link to="/spese-lungo-termine">Spese Lungo Termine</router-link>
-          <router-link to="/vendite">Vendite</router-link>
-        </nav>
+
       </header>
 
       <!-- Mostra la vista del componente in base alla rotta -->

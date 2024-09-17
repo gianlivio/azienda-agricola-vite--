@@ -8,17 +8,16 @@ export default {
 <template>
     <nav class="navbar">
       <div class="container">
-        <a href="/" class="navbar-brand">Azienda Agricola</a>
+        <router-link to="/" class="navbar-brand">Azienda Agricola</router-link>
         <ul class="navbar-nav">
-          <li><a href="/" class="nav-item">Home</a></li>
-          <li><a href="/prodotti" class="nav-item">Prodotti</a></li>
-          <li><a href="/contatti" class="nav-item">Contatti</a></li>
-          <li><a href="/about" class="nav-item">Chi Siamo</a></li>
+          <li><router-link to="/trasparenza" class="nav-item">Trasparenza</router-link></li>
+          <li><router-link to="/prodotti" class="nav-item">Prodotti</router-link></li>
+          <li><router-link to="/contatti" class="nav-item">Contatti</router-link></li>
+          <li><router-link to="/about" class="nav-item">Chi Siamo</router-link></li>
         </ul>
       </div>
     </nav>
-</template>
-  
+  </template>
  
   
 <style scoped>
