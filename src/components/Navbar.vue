@@ -10,10 +10,10 @@ export default {
       <div class="container">
         <router-link to="/" class="navbar-brand">Azienda Agricola</router-link>
         <ul class="navbar-nav">
-          <li><router-link to="/trasparenza" class="nav-item">Trasparenza</router-link></li>
           <li><router-link to="/prodotti" class="nav-item">Prodotti</router-link></li>
           <li><router-link to="/contatti" class="nav-item">Contatti</router-link></li>
           <li><router-link to="/about" class="nav-item">Chi Siamo</router-link></li>
+          <li><router-link to="/trasparenza" class="nav-item">Trasparenza</router-link></li>
         </ul>
       </div>
     </nav>
