@@ -20,7 +20,7 @@ export default {
 <style scoped>
 .footer {
   background-color: #222;
-  padding: 2rem;
+  padding: 1rem;
   color: #fff;
   text-align: center;
   width: 100%;
@@ -28,8 +28,6 @@ export default {
 
 .footer-nav {
   list-style-type: none;
-  margin-top: 1rem;
-  padding: 0;
   display: flex;
   justify-content: center;
   gap: 2rem;

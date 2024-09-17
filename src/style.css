@@ -77,3 +77,18 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+/* Aggiungi qui sotto nuovi colori specifici per l'homepage */
+
+:root {
+  --primary-color: #6b8e23; /* Verde oliva */
+  --accent-color: #d4af37; /* Oro */
+  --background-color: #fffaf0; /* Bianco crema */
+}
+
+/* Assicurati che queste modifiche siano specifiche per la homepage */
+.homepage {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
