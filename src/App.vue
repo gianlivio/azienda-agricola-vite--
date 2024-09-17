@@ -1,30 +1,46 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div id="app">
+    <header>
+      <h1>Azienda Agricola</h1>
+      <nav>
+        <router-link to="/moliture">Moliture</router-link>
+        <router-link to="/spese-breve-termine">Spese Breve Termine</router-link>
+        <router-link to="/spese-lungo-termine">Spese Lungo Termine</router-link>
+        <router-link to="/vendite">Vendite</router-link>
+      </nav>
+    </header>
+
+    <!-- Qui mostrerà la vista del componente in base alla rotta -->
+    <router-view />
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
+<script>
+export default {
+  name: 'App',
+};
+</script>
+
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+h1 {
+  color: #42b883;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+nav {
+  margin-bottom: 20px;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+nav router-link{
+  padding-left: 20px;
+}
+
+nav a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #42b883;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 </style>
