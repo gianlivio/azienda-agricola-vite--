@@ -28,7 +28,14 @@ export default {
     <h2>Vendite</h2>
     <ul>
       <li v-for="vendita in vendite" :key="vendita.id">
-        {{ vendita.nome_cliente }} - {{ vendita.quantita_ordinata }}
+          Nome Cliente: {{ vendita.nome_cliente }} <br>
+          Numero: {{ vendita.numero }} <br>
+          Email: {{ vendita.email }} <br>
+          Quantità Ordinata: {{ vendita.quantita_ordinata }} <br>
+          Costo Imbottigliamento: {{ vendita.costo_imbottigliamento }} <br>
+          Costo Spedizione: {{ vendita.costo_spedizione }} <br>
+          Incasso: {{ vendita.incasso }} <br>
+          Indirizzo Spedizione: {{ vendita.indirizzo_spedizione }}
       </li>
     </ul>
   </div>

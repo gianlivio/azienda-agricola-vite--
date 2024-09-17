@@ -28,7 +28,8 @@ export default {
     <h2>Spese Lungo Termine</h2>
     <ul>
       <li v-for="spesa in speseLungoTermine" :key="spesa.id">
-        {{ spesa.descrizione }} - {{ spesa.importo }}
+          Descrizione: {{ spesa.descrizione }} <br>
+          Importo: {{ spesa.importo }}
       </li>
     </ul>
   </div>

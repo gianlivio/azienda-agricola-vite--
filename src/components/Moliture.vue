@@ -28,7 +28,13 @@ export default {
     <h2>Moliture</h2>
     <ul>
       <li v-for="molitura in moliture" :key="molitura.id">
-        {{ molitura.nome }} - {{ molitura.data }}
+          Data: {{ molitura.data }} <br>
+          Frantoio: {{ molitura.frantoio }} <br>
+          Terreno: {{ molitura.terreno }} <br>
+          KG Olive: {{ molitura.kg_olive }} <br>
+          Varietà: {{ molitura.varieta }} <br>
+          Litri Olio: {{ molitura.litri_olio }} <br>
+          Resa: {{ molitura.resa }}
       </li>
     </ul>
   </div>

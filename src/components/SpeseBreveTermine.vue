@@ -28,7 +28,11 @@ export default {
     <h2>Spese Breve Termine</h2>
     <ul>
       <li v-for="spesa in speseBreveTermine" :key="spesa.id">
-        {{ spesa.nome }} - {{ spesa.importo }}
+          Molitura: {{ spesa.molitura }} <br>
+          Operai: {{ spesa.operai }} <br>
+          Benza: {{ spesa.benza }} <br>
+          Spedizioni: {{ spesa.spedizioni }} <br>
+          Imbottigliamento: {{ spesa.imbottigliamento }}
       </li>
     </ul>
   </div>
