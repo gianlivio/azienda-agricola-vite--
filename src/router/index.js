@@ -8,10 +8,12 @@ import Prodotti from '../components/Prodotti.vue';
 import Contatti from '../components/Contatti.vue'; 
 import Homepage from '../components/Homepage.vue';
 import ChiSiamo from '../components/ChiSiamo.vue';
+import Login from '../components/Login.vue';
 
 
 const routes = [
   { path: '/', component: Homepage }, // Redirige all'homepage 
+  { path: '/login', name: 'Login', component: Login },
   {
     path: '/trasparenza',
     component: () => import('../components/Trasparenza.vue'), 
@@ -24,7 +26,8 @@ const routes = [
   },
   { path: '/prodotti', component: Prodotti },
   { path: '/contatti', component: Contatti }, 
-  { path: '/about', component: ChiSiamo } 
+  { path: '/about', component: ChiSiamo },
+  
 ];
 
 const router = createRouter({
